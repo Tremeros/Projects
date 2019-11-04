@@ -1,0 +1,140 @@
+@import "grid";
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+  header {
+    background-image: url(../images/banner3.jpg);
+      height: 600px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .container {
+    max-width : 1300px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    .banner {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img {
+            height: 100px;
+            margin-top: 20px;
+        }
+        .nav__list {
+          display: flex;
+          margin-top: 40px;
+          list-style: none;
+         
+          a {
+              color: white;
+              text-decoration: none;
+              margin: 20px;
+              font-size: 20px;
+          }
+      }
+        
+      }
+      .first-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1300px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        h1 {
+        font-size: 200px;
+        background: -webkit-linear-gradient(#eee, #1E90FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        }
+    }
+  }
+  .news {
+    height: 700px;
+    background-image: linear-gradient(to bottom right, lighten(gray, 30), white);
+  }
+  .news .container .row  {
+    height: 100px;
+    .col-12-12 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 40px;
+      }
+    }
+    .col-4-12{
+      height: 600px;
+    
+    img {
+      height: 300px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .btn {
+      height: 30px;
+      width: 150px;
+      border-radius: 10px;
+      background-color: #32CD32;
+      a {
+        text-decoration: none;
+        color: #191970;
+        }
+    }
+  }
+  }
+  
+  .highlights {
+    height: 600px;
+    background-image: linear-gradient(to bottom right, lighten(gray, 30), white);
+     .video{
+       h1 {
+         width: 72%;
+         height: 100px;
+         text-align: center;
+         font-size: 30px;
+         margin-top: 20px;
+       }
+    .vid {
+      height: 200px;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 */
+      position: relative;
+      width: 100%;
+      iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }      
+    }
+  }
+  .scores {
+    .col-4-12 {
+    height: 600px;
+    width: 100%;
+    border: 1px solid red;
+    }
+  }
+  }
+
+  

@@ -1,0 +1,22 @@
+.bar {
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+    /* background-image: linear-gradient(90deg, orangered 50%, dodgerblue 50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.squares {
+    display: flex;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 20px;
+}

@@ -1,0 +1,25 @@
+$columns: 12;
+$gup: 15px;
+
+[class*="col-"] {
+  padding-left: $gup;
+  padding-right: $gup;
+  box-sizing: border-box;
+  margin-bottom: 2 * $gup;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i}-#{$columns} {
+    width: (100 / $columns * $i) * 1%;
+  }
+}
+
+.row {
+  display: flex;
+  margin-left: -$gup;
+  margin-right: -$gup;
+}
+.container {
+  padding-left: $gup;
+  padding-right: $gup;
+}
