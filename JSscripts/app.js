@@ -117,59 +117,83 @@
 
 
   
-function randomNumber() {      
-    return Math.floor(Math.random() * 4);
-   }
+// function randomNumber() {      
+//     return Math.floor(Math.random() * 4);
+//    }
   
 
-function changeSquare() {
+// function changeSquare() {
     
-  let nmr = randomNumber();
+//   let nmr = randomNumber();
    
 
-  switch(nmr) {
+//   switch(nmr) {
 
 
-    case 0:
-        let sqr1 = document.querySelector("div.square-1");
-        sqr1.style.backgroundColor = "green";
-        setTimeout(function() {sqr1.style.backgroundColor = "white";}, 500);
-        break;
-    case 1:
-        let sqr2 = document.querySelector('div.square-2');
-        sqr2.style.backgroundColor = "green";
-        setTimeout(function() {sqr2.style.backgroundColor = "white";}, 500);
-        break;
-    case 2:
-        let sqr3 = document.querySelector('div.square-3');
-        sqr3.style.backgroundColor = "green";
-        setTimeout(function() {sqr3.style.backgroundColor = "white";}, 500);
-        break;
-    case 3:
-        let sqr4 = document.querySelector('div.square-4');
-        sqr4.style.backgroundColor = "green";
-        setTimeout(function() {sqr4.style.backgroundColor = "white";}, 500);
-        break;
-  }
+//     case 0:
+//         let sqr1 = document.querySelector("div.square-1");
+//         sqr1.style.backgroundColor = "green";
+//         setTimeout(function() {sqr1.style.backgroundColor = "white";}, 500);
+//         break;
+//     case 1:
+//         let sqr2 = document.querySelector('div.square-2');
+//         sqr2.style.backgroundColor = "green";
+//         setTimeout(function() {sqr2.style.backgroundColor = "white";}, 500);
+//         break;
+//     case 2:
+//         let sqr3 = document.querySelector('div.square-3');
+//         sqr3.style.backgroundColor = "green";
+//         setTimeout(function() {sqr3.style.backgroundColor = "white";}, 500);
+//         break;
+//     case 3:
+//         let sqr4 = document.querySelector('div.square-4');
+//         sqr4.style.backgroundColor = "green";
+//         setTimeout(function() {sqr4.style.backgroundColor = "white";}, 500);
+//         break;
+//   }
 
-    setTimeout(function() {
-        sqr1.style.backgroundColor = "white";
-        sqr2.style.backgroundColor = "white";
-        sqr3.style.backgroundColor = "white";
-        sqr4.style.backgroundColor = "white";
-    }, 500);
+//     setTimeout(function() {
+//         sqr1.style.backgroundColor = "white";
+//         sqr2.style.backgroundColor = "white";
+//         sqr3.style.backgroundColor = "white";
+//         sqr4.style.backgroundColor = "white";
+//     }, 500);
  
+// }
+
+
+//  function colors() {
+//      let interval = setInterval(changeSquare, 1000);
+     
+//  }
+
+//  colors();
+
+
+
+var comments = [
+    {title: "First comment", body: "This is first comment"},
+    {title: "Seccond comment", body: "This is second comment"}
+];
+
+function addComments() {
+    setTimeout(() => {
+     let output = "";
+     comments.forEach(comment => {
+         output += `<h1>${comment.title}</h1>` + `<p>${comment.body}</p>`;
+     });
+     document.body.innerHTML = output;
+    }, 1000);
 }
 
 
- function colors() {
-     let interval = setInterval(changeSquare, 1000);
-     
- }
 
- colors();
+function createComment(comment, callback) {
+    setTimeout(() => {
+      comments.push(comment);
+      callback();
+    }, 2000);
+}
 
-
-
-
+createComment({title: "Third comment", body: "This website sucks!!!"}, addComments);
 
