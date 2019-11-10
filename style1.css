@@ -1,0 +1,74 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: 300px 600px;
+    grid-gap: 20px;
+    
+
+    grid-template-areas:
+    "header header header header"
+    "column-1 column-2 column-3 column-4"
+}
+
+.header {
+    grid-area: header;
+    background: linear-gradient(blue, green);
+}
+
+.col-1 {
+    grid-area: column-1;
+    position: relative;
+    text-decoration: none;
+}
+
+.col-1 img {
+    height: 400px;
+    width: 100%;
+    border-radius: 50%;
+}
+.col-1 h1 {
+    color: black;
+    text-align: center;
+}
+.col-1 p {
+    color: black;
+    text-align: center;
+}
+.background {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(blue, purple);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.3s;
+}
+.background:hover {
+    opacity: 0.5;
+}
+
+.bar {
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    opacity: 1;
+    top: 200px;
+    right: 170px;
+    z-index: 2;
+}
+
+.col-2 {
+    grid-area: column-2;
+}
+
+.col-3 {
+    grid-area: column-3;
+}
+
+.col-4 {
+    grid-area: column-4;
+}

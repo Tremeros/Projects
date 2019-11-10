@@ -171,18 +171,46 @@
 
 
 
+// var comments = [
+//     {title: "First comment", body: "This is first comment"},
+//     {title: "Seccond comment", body: "This is second comment"}
+// ];
+
+// function addComments() {
+//     setTimeout(() => {
+//      let output = "";
+//      comments.forEach(comment => {
+//          output += `<h1>${comment.title}</h1>` + `<p>${comment.body}</p>` + `<p>-----------------------------</p>`;
+//      });
+//      document.body.outerHTML = output;
+//     }, 1000);
+// }
+
+
+
+// function createComment(comment, callback) {
+//     setTimeout(() => {
+//       comments.push(comment);
+//       callback();
+//     }, 2000);
+// }
+
+// createComment({title: "Third comment", body: "This website sucks!!!"}, addComments);
+
+
+
 var comments = [
-    {title: "First comment", body: "This is first comment"},
-    {title: "Seccond comment", body: "This is second comment"}
+    
+    
 ];
 
 function addComments() {
     setTimeout(() => {
      let output = "";
      comments.forEach(comment => {
-         output += `<h1>${comment.title}</h1>` + `<p>${comment.body}</p>`;
+         output += `<article class="post"><header class="post-header"><h2 class="post-title"><a href="" class="post-title-link">${comment.title}</a></h2></header>` + `<div class="post-content">${comment.body}</div></article>`;
      });
-     document.body.innerHTML = output;
+     document.body.outerHTML = output;
     }, 1000);
 }
 
@@ -195,5 +223,4 @@ function createComment(comment, callback) {
     }, 2000);
 }
 
-createComment({title: "Third comment", body: "This website sucks!!!"}, addComments);
-
+createComment({title: "Second post", body: "Fuck you!!!"}, addComments);
