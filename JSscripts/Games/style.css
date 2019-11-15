@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-screen span {
+    margin-bottom: 20px;
+}
+
+.main-btn, .scissors-btn, .paper-btn, .rock-btn, .return-btn {
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgreen;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.player-btn {
+    height: 60px;
+    width: 150px;
+}
+
+.game-pannel {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.player-points, .pc-points, .result {
+    margin: 30px;
+}
+.end-game {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-game span {
+    font-size: 100px;
+}
+.end-game div {
+    font-size: 100px;
+}
+
+.hide {
+    display: none;
+}

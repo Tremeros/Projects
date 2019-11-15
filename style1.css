@@ -19,6 +19,7 @@
     grid-area: column-1;
     position: relative;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .col-1 img {
@@ -29,10 +30,19 @@
 .col-1 h1 {
     color: black;
     text-align: center;
+    transition: 0.3s;
+}
+.col-1 h1:hover {
+    color: blue;
 }
 .col-1 p {
     color: black;
     text-align: center;
+    transition: 0.3s;
+}
+
+.col-1 p:hover {
+    color: blue;
 }
 .background {
     position: absolute;
