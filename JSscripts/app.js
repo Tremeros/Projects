@@ -74,43 +74,43 @@
 
 // // console.log(validatePIN("-1.234"));
 
-// function ankieta(num1, num2, num3, num4){
-//     let count = num1 + num2 + num3 + num4;
+function ankieta(num1, num2, num3, num4){
+    let count = num1 + num2 + num3 + num4;
 
-    // let percent1 = Math.round((num1 * 100) / count);
-    // let second1 = 100 - percent1;
-    // let elem1 = document.querySelector("div.bar1");
-    // let tekst1 = document.querySelector("div.bar1 span");
-    // elem1.innerHTML = percent1 + "%";
-    // elem1.style.backgroundImage = "linear-gradient(90deg, orangered #{percent1}%, dodgerblue #{percent2}%)";
+    let percent1 = Math.round((num1 * 100) / count);
+    let second1 = 100 - percent1;
+    let elem1 = document.querySelector("div.bar1");
+    let tekst1 = document.querySelector("div.bar1 span");
+    elem1.innerHTML = percent1 + "%";
+    elem1.style.backgroundImage = "linear-gradient(90deg, orangered #{percent1}%, dodgerblue #{percent2}%)";
     
   
-//     let percent2 = Math.round((num2 * 100) / count);
-//     let second2 = 100 - percent2;
-//     let elem2 = document.querySelector("div.bar2");
-//     let tekst2 = document.querySelector("div.bar2 span");
-//     elem2.innerHTML = percent2 + "%";
+    let percent2 = Math.round((num2 * 100) / count);
+    let second2 = 100 - percent2;
+    let elem2 = document.querySelector("div.bar2");
+    let tekst2 = document.querySelector("div.bar2 span");
+    elem2.innerHTML = percent2 + "%";
 
-//     let percent3 = Math.round((num3 * 100) / count);
-//     let second3 = 100 - percent3;
-//     let elem3 = document.querySelector("div.bar3");
-//     let tekst3 = document.querySelector("div.bar3 span");
-//     elem3.innerHTML = percent3 + "%";
+    let percent3 = Math.round((num3 * 100) / count);
+    let second3 = 100 - percent3;
+    let elem3 = document.querySelector("div.bar3");
+    let tekst3 = document.querySelector("div.bar3 span");
+    elem3.innerHTML = percent3 + "%";
 
-//     let percent4 = Math.round((num4 * 100) / count);
-//     let second4 = 100 - percent4;
-//     let elem4 = document.querySelector("div.bar4");
-//     let tekst4 = document.querySelector("div.bar4 span");
-//     elem4.innerHTML = percent4 + "%";
+    let percent4 = Math.round((num4 * 100) / count);
+    let second4 = 100 - percent4;
+    let elem4 = document.querySelector("div.bar4");
+    let tekst4 = document.querySelector("div.bar4 span");
+    elem4.innerHTML = percent4 + "%";
 
    
 
-// }
+}
 
 
 
 
-// ankieta(22, 345, 87, 4); 
+ankieta(22, 345, 87, 4); 
 
 // let sqr = document.querySelector("div.square1");
 // sqr.style.backgroundColor = "green";
@@ -199,28 +199,27 @@
 
 
 
-var comments = [
+// var comments = [
     
     
-];
+// ];
 
-function addComments() {
-    setTimeout(() => {
-     let output = "";
-     comments.forEach(comment => {
-         output += `<article class="post"><header class="post-header"><h2 class="post-title"><a href="" class="post-title-link">${comment.title}</a></h2></header>` + `<div class="post-content">${comment.body}</div></article>`;
-     });
-     document.body.outerHTML = output;
-    }, 1000);
-}
+// function addComments() {
+//     setTimeout(() => {
+//      let output = "";
+//      comments.forEach(comment => {
+//          output += `<article class="post"><header class="post-header"><h2 class="post-title"><a href="" class="post-title-link">${comment.title}</a></h2></header>` + `<div class="post-content">${comment.body}</div></article>`;
+//      });
+//      document.body.outerHTML = output;
+//     }, 1000);
+// }
 
 
 
-function createComment(comment, callback) {
-    setTimeout(() => {
-      comments.push(comment);
-      callback();
-    }, 2000);
-}
+// function createComment(comment, callback) {
+//     setTimeout(() => {
+//       comments.push(comment);
+//       callback();
+//     }, 2000);
+// }
 
-createComment({title: "Second post", body: "Fuck you!!!"}, addComments);

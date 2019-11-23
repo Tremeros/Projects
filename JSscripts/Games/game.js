@@ -37,7 +37,7 @@ scissorsBtn.addEventListener("click", function(e) {
         playerPointsValue.innerText = playerPoints;
         result.innerText = "Player won the round";
     } else if(pc == "scissors") {
-       result.innerText = "Remis";
+       result.innerText = "Draw";
     } else {
         pcPoints++;
         pcPointsValue.innerText = pcPoints;
@@ -64,7 +64,7 @@ paperBtn.addEventListener("click", function(e) {
         playerPointsValue.innerText = playerPoints;
         result.innerText = "Player won the round";
     } else if(pc == "paper") {
-       result.innerText = "Remis";
+       result.innerText = "Draw";
     } else {
         pcPoints++;
         pcPointsValue.innerText = pcPoints;
@@ -91,7 +91,7 @@ rockBtn.addEventListener("click", function(e) {
         playerPointsValue.innerText = playerPoints;
         result.innerText = "Player won the round";
     } else if(pc == "rock") {
-       result.innerText = "Remis";
+       result.innerText = "Draw";
     } else {
         pcPoints++;
         pcPointsValue.innerText = pcPoints;

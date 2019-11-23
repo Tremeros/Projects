@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color:  mediumseagreen;
+}
+
+.board {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.hero {
+    background: url(../images/hero.png);
+    height: 51px;
+    width: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: 0 0;
+    position: absolute;
+}
+
+.moveDown {
+    animation: walkDown 0.5s infinite steps(3), moveDown 5s infinite linear;
+}
+
+.moveUp {
+    animation: walkUp 0.5s infinite steps(3), moveUp 7s infinite linear;
+}
+
+.moveLeft {
+    animation: walkLeft 0.5s infinite steps(3), moveLeft 15s infinite linear;
+}
+.moveRight {
+    animation: walkRight 0.5s infinite steps(3), moveRight 10s infinite linear;
+}
+
+.top {
+    top: 100px;
+}
+
+@keyframes walkDown {
+    0% {
+      background-position: 0 0;
+      height: 51px;
+      width: 30px;
+    }
+    100% {
+        background-position: -100px 0;
+        height: 51px;
+        width: 30px;
+    }
+  }
+
+  @keyframes moveDown {
+    100% {
+        top: calc(100% + 51px);
+    }
+  }
+
+
+  @keyframes walkUp {
+    0% {
+      background-position: 0 -145px;
+      height: 51px;
+      width: 30px;
+    }
+    100% {
+        background-position: -100px -145px;
+        height: 51px;
+        width: 30px;
+    }
+  }
+
+  @keyframes moveUp {
+    100% {
+        top: calc(51px - 100%);
+    }
+  }
+
+
+
+
+  @keyframes walkLeft {
+    0% {
+        background-position: 0 -49px;
+      height: 51px;
+      width: 30px;
+    }
+    100% {
+        background-position: -100px -49px;
+        height: 51px;
+        width: 30px;
+    }
+  }
+
+  @keyframes moveLeft {
+    100% {
+        left: calc(51px - 100%);
+    }
+  }
+
+
+
+
+  @keyframes walkRight {
+    0% {
+        background-position: 0 -96px;
+      height: 51px;
+      width: 30px;
+    }
+    100% {
+        background-position: -100px -96px;
+        height: 51px;
+        width: 30px;
+    }
+  }
+
+  @keyframes moveRight {
+    100% {
+        left: calc(100% + 51px);
+    }
+  }

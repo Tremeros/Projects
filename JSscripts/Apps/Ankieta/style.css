@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ankieta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ankieta div:first-child {
+    font-size: 50px;
+}
+
+.bar {
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nowa-ankieta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nowa-ankieta h1 {
+    font-size: 50px;
+}
+.new__btn {
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
