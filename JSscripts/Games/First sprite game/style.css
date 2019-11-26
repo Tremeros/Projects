@@ -4,7 +4,9 @@
 }
 
 body {
-background-color:  mediumseagreen;
+  background: url(../images/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .board {
@@ -126,4 +128,21 @@ background-color:  mediumseagreen;
     100% {
         left: calc(100% + 51px);
     }
+  }
+
+  .offset-down {
+    margin: 20px;
+  }
+  .offset-left {
+    margin:20px;
+  }
+
+  .square {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  .hidden {
+    display: none;
   }
